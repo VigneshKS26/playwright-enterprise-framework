@@ -11,7 +11,8 @@ export const test = base.extend({
     const depositPage = new DepositPage(page);
 
     await page.goto(process.env.MEMBER_URL);
-
+    console.log("Current URL:", this.page.url());
+    await page.screenshot({ path: "debug1.png" });
     await loginPage.loginMember();
 
     await use({
@@ -31,6 +32,8 @@ export const test = base.extend({
     const loginPage = new LoginPage(page);
     const depositPage = new DepositPage(page);
     await page.goto(process.env.MERCHANT_URL);
+    console.log("Current URL:", this.page.url());
+    await page.screenshot({ path: "debug.png" });
     await use({
       context,
       page,
