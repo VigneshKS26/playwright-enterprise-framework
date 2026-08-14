@@ -11,9 +11,9 @@ export class LoginPage extends BasePage {
     this.merchantCode = page.getByPlaceholder("商户编码");
     this.merchantLoginButton = page.locator("button[type='button']");
 
-    this.languageDropdown = page
-      .locator("svg.iconify.iconify--ant-design")
-      .nth(26);
+    this.languageDropdown = page.locator(
+      'xpath=//div[contains(@class,"ml-10")]/preceding-sibling::i[2]',
+    );
     this.selectEnglishLang = page.getByText("English");
 
     this.profileName = page.locator(".profile__name");
