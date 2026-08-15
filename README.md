@@ -4,8 +4,8 @@ End-to-end Playwright automation framework designed for a multi-role fintech dep
 
 This project automates the complete deposit lifecycle across two user roles:
 
-* Member (customer)
-* Merchant (back-office approver)
+- Member (customer)
+- Merchant (back-office approver)
 
 The workflow covers deposit submission, approval processing, and transaction verification, simulating a real business process instead of isolated UI actions.
 
@@ -13,23 +13,23 @@ The workflow covers deposit submission, approval processing, and transaction ver
 
 ### Member Portal
 
-* Login
-* Submit manual deposit request
-* Enter deposit amount
-* Enter remitter details
-* Upload payment proof
-* Verify transaction history
+- Login
+- Submit manual deposit request
+- Enter deposit amount
+- Enter remitter details
+- Upload payment proof
+- Verify transaction history
 
 ### Merchant Portal
 
-* Login
-* Search pending deposit requests
-* Review submitted details
-* Approve deposit requests
+- Login
+- Search pending deposit requests
+- Review submitted details
+- Approve deposit requests
 
 ### Verification
 
-* Confirm approved deposits appear correctly in member transaction history
+- Confirm approved deposits appear correctly in member transaction history
 
 ## Framework Features
 
@@ -53,8 +53,8 @@ Authenticated sessions are reused by dependent test projects, reducing execution
 
 Separate fixtures are used for:
 
-* Member workflows
-* Merchant workflows
+- Member workflows
+- Merchant workflows
 
 Each role runs inside its own browser context.
 
@@ -70,10 +70,10 @@ GitHub Actions workflow is configured for automated execution, secret management
 
 ## Tech Stack
 
-* Playwright
-* JavaScript (ES Modules)
-* dotenv
-* GitHub Actions
+- Playwright
+- JavaScript (ES Modules)
+- dotenv
+- GitHub Actions
 
 ## Project Structure
 
@@ -108,11 +108,11 @@ npx playwright test
 
 ## Challenges Solved
 
-* Multi-user workflow automation
-* Session reuse using Storage State
-* Environment-based configuration
-* Secure credential management using GitHub Secrets
-* CI/CD execution with GitHub Actions
+- Multi-user workflow automation
+- Session reuse using Storage State
+- Environment-based configuration
+- Secure credential management using GitHub Secrets
+- CI/CD execution with GitHub Actions
 
 ## Debugging Example
 
@@ -120,19 +120,22 @@ During CI execution, a region-restricted environment returned HTTP 403 responses
 
 ## Skills Demonstrated
 
-* Playwright Framework Design
-* Page Object Model (POM)
-* Custom Fixtures
-* Storage State Authentication
-* Multi-Role Workflow Automation
-* File Upload Automation
-* Dynamic Table Handling
-* Environment Configuration
-* GitHub Actions CI/CD
-* GitHub Secrets Management
+- Playwright Framework Design
+- Page Object Model (POM)
+- Custom Fixtures
+- Storage State Authentication
+- Multi-Role Workflow Automation
+- File Upload Automation
+- Dynamic Table Handling
+- Environment Configuration
+- GitHub Actions CI/CD
+- GitHub Secrets Management
+
+## Screenshots
+
+![Playwright Report](screenshots/playwright-report.png)
 
 ## Author
 
 Vignesh K S
 QA Engineer | Playwright Automation
-
